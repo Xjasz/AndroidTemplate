@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myprogress"
+    android:oneshot="false">
+    <item
+        android:drawable="@drawable/animation_gear_0"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/animation_gear_1"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/animation_gear_2"
+        android:duration="150" />
+</animation-list>

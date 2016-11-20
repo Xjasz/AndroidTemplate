@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#783381"
+    android:scrollbars="none">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|center_vertical"
+            android:text="Version: 1.2"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvHomeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVersion"
+            android:layout_marginTop="5dp"
+            android:contentDescription="Start"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="HOME TITLE"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp" />
+
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvHomeTitle"
+            android:layout_marginTop="15dp"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="5" />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="75"
+                android:background="@drawable/etroundedges"
+                android:cursorVisible="true"
+                android:hint="Keywords"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#CCCCCC"
+                android:textCursorDrawable="@null"
+                android:textSize="20dp"
+                tools:targetApi="honeycomb_mr1" />
+
+            <TextView
+                android:id="@+id/tvStart"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="15"
+                android:background="@drawable/button_green"
+                android:contentDescription="Start"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Go"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="5" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCategory"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/llSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_blue">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/category" />
+
+            <TextView
+                android:id="@+id/tvCategoryLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="Fragment"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/vCategorySplit"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/tvCategoryLeft"
+                android:background="#FFFFFF"
+                android:gravity="left|center_vertical" />
+
+            <TextView
+                android:id="@+id/tvCategoryRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/vCategorySplit"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:text="This shows 2nd Fragment"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlLocation"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/rlCategory"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_blue">
+
+            <ImageView
+                android:id="@+id/ivLocation"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/tvLocationLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="left|center_vertical"
+                android:text="Dialog"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/vLocationSplit"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/tvLocationLeft"
+                android:background="#FFFFFF"
+                android:gravity="left|center_vertical" />
+
+            <TextView
+                android:id="@+id/tvLocationRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/vLocationSplit"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="20dp"
+                android:text="This shows a Dialog Fragment"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llSettings"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/rlLocation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="50">
+
+            <RelativeLayout
+                android:id="@+id/rlSearchSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="24"
+                android:background="@drawable/button_blue">
+
+                <ImageView
+                    android:id="@+id/ivSearchSettings"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/searchsettings" />
+
+                <TextView
+                    android:id="@+id/tvSearchSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Web\nService"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <RelativeLayout
+                android:id="@+id/rlAutomationSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="24"
+                android:background="@drawable/button_blue">
+
+                <ImageView
+                    android:id="@+id/ivAutomationSettings"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/automationsettings" />
+
+                <TextView
+                    android:id="@+id/tvAutomationSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Opens\nBrowser"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPost"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/llSettings"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_blue"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/ivPost"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/add" />
+
+            <TextView
+                android:id="@+id/tvPost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/ivPost"
+                android:gravity="left|center_vertical"
+                android:text="Does\nNothing"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

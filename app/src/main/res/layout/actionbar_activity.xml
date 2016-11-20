@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlActionBarRoot"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_darken"
+        android:padding="3dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menu" />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivFavorites"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_darken"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/favorite"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivUp"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_darken"
+        android:scaleType="fitCenter"
+        android:src="@drawable/up_arrow"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivDown"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_darken"
+        android:scaleType="fitCenter"
+        android:src="@drawable/down_arrow"
+        android:visibility="gone" />
+
+</RelativeLayout>
